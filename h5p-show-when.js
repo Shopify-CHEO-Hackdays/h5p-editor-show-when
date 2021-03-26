@@ -1,5 +1,5 @@
 H5PEditor.ShowWhen = (function ($) {
-
+  console.log("LOADED")
   // Handler for the 'select' semantics type
   function SelectHandler(field, equals) {
     this.satisfied = function () {
@@ -131,6 +131,8 @@ H5PEditor.ShowWhen = (function ($) {
       }
       self.$container = $container;
     };
+
+    self.child = fieldInstance
 
     /**
      * Validate
